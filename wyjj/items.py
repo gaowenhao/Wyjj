@@ -19,10 +19,12 @@ class WyjjItem(scrapy.Item):
     fund_company = scrapy.Field()  # 基金公司
     establish_date = scrapy.Field()  # 建立时间
 
-    week_increment = scrapy.Field()  # 周涨浮
-    month_increment = scrapy.Field()  # 月涨浮
-    season_increment = scrapy.Field()  # 季度涨浮
+    week_increment = scrapy.Field()  # 周涨幅
+    month_increment = scrapy.Field()  # 月涨幅
+    season_increment = scrapy.Field()  # 季度涨幅
+    half_increment = scrapy.Field()  # 半年涨幅
     year_increment = scrapy.Field()  # 年涨幅
+    this_year_increment = scrapy.Field()  # 今年涨幅
 
     asset_configuration = scrapy.Field()  # 资产配置
     stock_configuration = scrapy.Field()  # 重仓持有股票
